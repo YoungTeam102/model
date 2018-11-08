@@ -1,0 +1,5 @@
+com\igniubi\model\BaseModel.class
+com\igniubi\model\user\request\RegisterReq.class
+com\igniubi\model\CommonRsp$CommonrspBuilder.class
+com\igniubi\model\CommonRsp.class
+com\igniubi\model\ModelApplication.class
