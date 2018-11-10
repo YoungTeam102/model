@@ -2,7 +2,7 @@ package com.igniubi.model.user.request;
 
 import com.igniubi.model.BaseModel;
 
-public class RegisterReq extends BaseModel {
+public class RegisterReqBO extends BaseModel {
 
     private String mobile;
 
