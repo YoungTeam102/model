@@ -1,4 +1,4 @@
-package com.igniubi.model.common;
+package com.igniubi.model.enums.common;
 
 import java.util.concurrent.TimeUnit;
 

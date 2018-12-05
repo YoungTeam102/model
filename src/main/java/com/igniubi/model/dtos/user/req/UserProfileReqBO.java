@@ -1,4 +1,4 @@
-package com.igniubi.model.user.request;
+package com.igniubi.model.dtos.user.req;
 
 import lombok.Data;
 
