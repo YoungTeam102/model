@@ -20,7 +20,11 @@ public enum ResultEnum {
     SYSTEM_EXCEPTION(1000, "系统异常!"),
     LACK_REQUEST_PARAMS(1001, "缺少必要的请求参数!"),
     BAD_REQUEST_PARAMS(1002, "参数不合法!"),
-    PARSE_JSON_EXCEPTION(1003, " JSON转化异常!");
+    PARSE_JSON_EXCEPTION(1003, " JSON转化异常!"),
+
+
+
+    SERVICE_NOT_AVAILABLE(999999, "service not available");
 
     private ResultEnum(int code, String msg) {
         this.code = code;
@@ -43,4 +47,13 @@ public enum ResultEnum {
     public String getMsg() { return msg; }
 
     public void setMsg(String msg) { this.msg = msg; }
+
+    public static ResultEnum getResultByCode(int code){
+        for (ResultEnum resule : values()) {
+            if (resule.getCode() == code) {
+                return resule;
+            }
+        }
+        return null;
+    }
 }
