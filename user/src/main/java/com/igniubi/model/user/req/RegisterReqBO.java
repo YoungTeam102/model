@@ -1,4 +1,5 @@
-package com.igniubi.model.dtos.user.req;
+package com.igniubi.model.user.req;
+
 
 import com.igniubi.model.BaseModel;
 
