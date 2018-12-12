@@ -10,6 +10,10 @@ public class ArticleReq extends BaseModel {
 
     private String content;
 
-    private String auther;
+    private String author;
+
+    private String forward;
+
+    private String imgUrl;
 
 }

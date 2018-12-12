@@ -13,6 +13,36 @@ public class QuestionReq extends BaseModel {
 
     private List<String> answers;
 
+    private String answerer;
+
+    private String forward;
+
+    private String imgUrl;
+
+    public String getAnswerer() {
+        return answerer;
+    }
+
+    public void setAnswerer(String answerer) {
+        this.answerer = answerer;
+    }
+
+    public String getForward() {
+        return forward;
+    }
+
+    public void setForward(String forward) {
+        this.forward = forward;
+    }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
+
     public String getqTitle() {
         return qTitle;
     }

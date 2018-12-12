@@ -10,5 +10,7 @@ public class WordReq extends BaseModel {
 
     private String word;
 
+    private String wordsInfo;
+
 
 }
