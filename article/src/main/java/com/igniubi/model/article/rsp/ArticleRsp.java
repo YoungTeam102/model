@@ -1,4 +1,4 @@
-package com.igniubi.model.article.req;
+package com.igniubi.model.article.rsp;
 
 import com.igniubi.model.BaseModel;
 import lombok.Data;
@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class ArticleReq extends BaseModel {
+public class ArticleRsp extends BaseModel {
 
     private String title;
 
@@ -17,7 +17,5 @@ public class ArticleReq extends BaseModel {
     private String forward;
 
     private String imgUrl;
-
-    private String date;
 
 }

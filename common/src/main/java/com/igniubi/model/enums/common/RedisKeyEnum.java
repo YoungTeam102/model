@@ -5,7 +5,15 @@ import java.util.concurrent.TimeUnit;
 public enum  RedisKeyEnum {
 
     USER_SESSION("igniubi:sessionKey:",3L,TimeUnit.HOURS),
-    USER_PROFILE("igniubi:user:profile:",3L,TimeUnit.HOURS)
+    USER_PROFILE("igniubi:user:profile:",3L,TimeUnit.HOURS),
+
+    //article
+    ARTICLE_("igniubi:article:article:",2L,TimeUnit.HOURS),
+    ARTICLE_QA("igniubi:article:question:",2L,TimeUnit.HOURS),
+    ARTICLE_SERIALS("igniubi:article:serials:",2L,TimeUnit.HOURS),
+    ARTICLE_OW("igniubi:article:oneWord:",2L,TimeUnit.HOURS),
+    ARTICLE_MUSIC("igniubi:article:music:",2L,TimeUnit.HOURS),
+    ARTICLE_FILM("igniubi:article:film:",2L,TimeUnit.HOURS)
     ;
 
     RedisKeyEnum(String cacheKey, long cacheTime, TimeUnit timeUnit) {
