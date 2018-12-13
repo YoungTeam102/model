@@ -12,7 +12,7 @@ public class MusicReq extends BaseModel {
 
     private String author;
 
-    private String content;
+    private List<String> content;
 
     private String contentTitle;
 

@@ -3,6 +3,8 @@ package com.igniubi.model.article.req;
 import com.igniubi.model.BaseModel;
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class SerialsReq extends BaseModel {
 
@@ -11,7 +13,7 @@ public class SerialsReq extends BaseModel {
 
     private String author;
 
-    private String content;
+    private List<String> content;
 
     private Integer serialId;
 
