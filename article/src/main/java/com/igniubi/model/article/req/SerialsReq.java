@@ -17,6 +17,8 @@ public class SerialsReq extends BaseModel {
 
     private Integer serialId;
 
+    private Integer number;
+
     private String forward;
 
     private String imgUrl;
