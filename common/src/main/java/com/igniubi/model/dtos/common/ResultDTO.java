@@ -1,6 +1,7 @@
 package com.igniubi.model.dtos.common;
 
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.igniubi.model.enums.common.ResultEnum;
 
 /**
@@ -11,6 +12,7 @@ import com.igniubi.model.enums.common.ResultEnum;
  * @version 1.0.0
  * @date 2018-12-5
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResultDTO<T> extends BaseDTO{
 
     /**
