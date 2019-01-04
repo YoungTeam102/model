@@ -22,11 +22,9 @@ public enum ResultEnum {
     BAD_REQUEST_PARAMS(1002, "参数不合法!"),
     PARSE_JSON_EXCEPTION(1003, " JSON转化异常!"),
 
-
-
     SERVICE_NOT_AVAILABLE(999999, "service not available");
 
-    private ResultEnum(int code, String msg) {
+    ResultEnum(int code, String msg) {
         this.code = code;
         this.msg = msg;
     }
@@ -42,16 +40,12 @@ public enum ResultEnum {
 
     public int getCode() { return code; }
 
-    public void setCode(int code) { this.code = code; }
-
     public String getMsg() { return msg; }
 
-    public void setMsg(String msg) { this.msg = msg; }
-
     public static ResultEnum getResultByCode(int code){
-        for (ResultEnum resule : values()) {
-            if (resule.getCode() == code) {
-                return resule;
+        for (ResultEnum resultEnum : values()) {
+            if (resultEnum.getCode() == code) {
+                return resultEnum;
             }
         }
         return null;

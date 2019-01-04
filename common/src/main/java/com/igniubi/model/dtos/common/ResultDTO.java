@@ -41,10 +41,33 @@ public class ResultDTO<T> extends BaseDTO{
         this.timestamp = System.currentTimeMillis();
     }
 
+    public ResultDTO(ResultEnum resultEnum) {
+        this.code = resultEnum.getCode();
+        this.message = resultEnum.getMsg();
+        this.timestamp = System.currentTimeMillis();
+    }
+
+    public ResultDTO(Integer code, String message) {
+        this.code = code;
+        this.message = message;
+        this.timestamp = System.currentTimeMillis();
+    }
+
     public ResultDTO(Integer code, String message, T data) {
         this.code = code;
         this.message = message;
         this.data = data;
+        this.timestamp = System.currentTimeMillis();
+    }
+
+    public ResultDTO code(Integer code){
+        this.code = code;
+        return this;
+    }
+
+    public ResultDTO message(String message){
+        this.message = message;
+        return this;
     }
 
     @Override
