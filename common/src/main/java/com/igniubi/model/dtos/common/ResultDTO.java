@@ -36,9 +36,7 @@ public class ResultDTO<T> extends BaseDTO{
     private T data;
 
     public ResultDTO() {
-        this.code = ResultEnum.OK.getCode();
-        this.message = ResultEnum.OK.getMsg();
-        this.timestamp = System.currentTimeMillis();
+        this(ResultEnum.OK);
     }
 
     public ResultDTO(ResultEnum resultEnum) {
@@ -51,6 +49,11 @@ public class ResultDTO<T> extends BaseDTO{
         this.code = code;
         this.message = message;
         this.timestamp = System.currentTimeMillis();
+    }
+
+    public ResultDTO(T data) {
+        this(ResultEnum.OK);
+        this.data = data;
     }
 
     public ResultDTO(Integer code, String message, T data) {
@@ -67,6 +70,11 @@ public class ResultDTO<T> extends BaseDTO{
 
     public ResultDTO message(String message){
         this.message = message;
+        return this;
+    }
+
+    public ResultDTO data(T data){
+        this.data = data;
         return this;
     }
 
