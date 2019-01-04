@@ -77,7 +77,29 @@ public class ResultDTO<T> extends BaseDTO{
         this.data = data;
         return this;
     }
+    public static class ResultDTOBuilder{
+        ResultDTO resultDTO;
 
+        public ResultDTOBuilder() {
+            this.resultDTO= new ResultDTO();
+        }
+
+        public ResultDTO.ResultDTOBuilder code(int code){
+            resultDTO.code=code;
+            return this;
+        }
+        public ResultDTO.ResultDTOBuilder message(String message){
+            resultDTO.message=message;
+            return this;
+        }
+        public ResultDTO.ResultDTOBuilder data(Object data){
+            resultDTO.data=data;
+            return this;
+        }
+        public ResultDTO build(){
+            return resultDTO;
+        }
+    }
     @Override
     public String toString() {
         return "响应结果【" + this.code + "】,:" + this.message;
