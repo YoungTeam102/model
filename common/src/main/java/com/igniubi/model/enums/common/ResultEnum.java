@@ -22,6 +22,8 @@ public enum ResultEnum {
     BAD_REQUEST_PARAMS(1002, "参数不合法!"),
     PARSE_JSON_EXCEPTION(1003, " JSON转化异常!"),
 
+
+    SESSION_FAIL(401,"登录状态已失效，请重新登录"),
     SERVICE_NOT_AVAILABLE(999999, "service not available");
 
     ResultEnum(int code, String msg) {
