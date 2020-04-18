@@ -13,7 +13,12 @@ public enum  RedisKeyEnum {
     ARTICLE_SERIALS("igniubi:article:serials:",2L,TimeUnit.HOURS),
     ARTICLE_OW("igniubi:article:oneWord:",2L,TimeUnit.HOURS),
     ARTICLE_MUSIC("igniubi:article:music:",2L,TimeUnit.HOURS),
-    ARTICLE_FILM("igniubi:article:film:",2L,TimeUnit.HOURS)
+    ARTICLE_FILM("igniubi:article:film:",2L,TimeUnit.HOURS),
+
+
+
+    //minichat
+    MINICHAT_SINGLE_RECORDS("igniubi:minichat:single_chat:records:", 30,TimeUnit.DAYS)
     ;
 
     RedisKeyEnum(String cacheKey, long cacheTime, TimeUnit timeUnit) {
